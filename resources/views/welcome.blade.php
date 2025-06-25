@@ -11,13 +11,14 @@
 <body class="bg-light">
 
     <div class="container vh-100 d-flex flex-column justify-content-center align-items-center text-center">
-        <h1 class="display-4 mb-4">Bienvenue sur Laravel</h1>
+        <h1 class="display-4 mb-4">Bienvenue sur {{ config('app.name') }}</h1>
 
         @if (Route::has('login'))
             <div class="mb-3">
                 @auth
-                    <a href="{{ url('/dashboard') }}" class="btn btn-success me-2">Dashboard</a>
+                    <a href="{{ url('/home') }}" class="btn btn-success me-2">Dashboard</a>
                 @else
+                    <a href="{{ route('boardgames.index') }}" class="btn btn-primary me-2">Jeux</a>
                     <a href="{{ route('login') }}" class="btn btn-primary me-2">Se connecter</a>
 
                     @if (Route::has('register'))
