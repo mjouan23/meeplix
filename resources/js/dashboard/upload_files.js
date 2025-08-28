@@ -69,7 +69,7 @@ export default function initBoardgameFileUploader({ uploadUrl, csrfToken }) {
         if (!fileIdToDelete || !fileElementToDelete) return;
 
         $.ajax({
-            url: `/boardgames/files/${fileIdToDelete}`,
+            url: `/dashboard/boardgames/files/${fileIdToDelete}`,
             method: 'DELETE',
             headers: {
                 'X-CSRF-TOKEN': csrfToken

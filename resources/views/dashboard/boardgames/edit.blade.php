@@ -31,7 +31,7 @@
             <input type="file" class="form-control me-2" id="pdf_file_input" accept="application/pdf">
             <input type="text" class="form-control me-2" id="pdf_display_name" placeholder="Nom à afficher">
             <!-- <button type="button" class="btn btn-primary" id="upload_pdf_btn">Ajouter un fichier</button> -->
-            <button type="button" class="btn btn-primary" id="upload_pdf_btn" data-upload-url="{{ route('boardgames.uploadFile', $boardgame->id) }}">Ajouter</button>
+            <button type="button" class="btn btn-primary" id="upload_pdf_btn" data-upload-url="{{ route('dashboard.boardgames.uploadFile', $boardgame->id) }}">Ajouter</button>
         </div>
 
         <ul id="existing-files" class="list-group mb-3">

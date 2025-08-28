@@ -14,6 +14,11 @@ class User extends Authenticatable implements MustVerifyEmail
     /** @use HasFactory<\Database\Factories\UserFactory> */
     use HasFactory, Notifiable;
 
+    /** CONSTANTES for a role */
+    public const ROLE_ADMIN = 'admin';
+    public const ROLE_MODERATOR = 'moderator';
+    public const ROLE_SUBSCRIBER = 'subscriber';
+
     /**
      * The attributes that are mass assignable.
      *
@@ -24,8 +29,30 @@ class User extends Authenticatable implements MustVerifyEmail
         'email',
         'password',
         'first_name',
-        'last_name'
+        'last_name',
+        'role'
     ];
+
+    // Méthods roles
+    public function isAdmin(): bool
+    {
+        return $this->role === self::ROLE_ADMIN;
+    }
+
+    public function isModerator(): bool
+    {
+        return $this->role === self::ROLE_MODERATOR;
+    }
+
+    public function isSubscriber(): bool
+    {
+        return $this->role === self::ROLE_SUBSCRIBER;
+    }
+    
+    public function hasRole(string $role): bool
+    {
+        return $this->role === $role;
+    }
 
     /**
      * The attributes that should be hidden for serialization.
