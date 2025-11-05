@@ -15,11 +15,14 @@
     flex-direction: row;
     gap: 12px;
     margin-bottom: 1em;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 #boardgame-wttm .objectives img {
     width: 20svw;
-    max-width: 250px;
+    max-width: 110px;
+    transition: transform .15s ease;
+    transform-origin: center;
+    position: relative;
 }
 #boardgame-wttm .decks {
     display: flex;
@@ -44,7 +47,29 @@
     border:1px solid #eee;
 }
 
-@media screen and (max-width: 769px) {
+/* Sur écrans tactiles: aperçu lors d'un appui (état actif) */
+@media (hover: none) and (pointer: coarse) {
+  #boardgame-wttm .img-objective-card:active {
+    transform: scale(2);
+    z-index: 10;
+  }
+}
+/* Tablette */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    #boardgame-wttm .decks {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    #boardgame-wttm section.deck .zones img {
+        width:40svw;
+        max-width: 150px;
+        height:auto;
+    }
+}
+/* Mobile */
+@media screen and (max-width: 768px) {
     #boardgame-wttm.main-boardgame {
         justify-content: flex-start;
         padding: 0.5em;
