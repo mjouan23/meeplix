@@ -1,0 +1,74 @@
+#boardgame-wttm .scenarios {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    margin-bottom: 5em;
+    justify-content: center;
+}
+#boardgame-wttm .scenarios .lstScenarios {
+    border:1px solid #ddd;
+    border-radius: 0.5em;
+    padding: 6px;
+}
+#boardgame-wttm .objectives {
+    display: none;
+    flex-direction: row;
+    gap: 12px;
+    margin-bottom: 1em;
+    justify-content: center;
+}
+#boardgame-wttm .objectives img {
+    width: 25svw;
+    max-width: 250px;
+}
+#boardgame-wttm .decks {
+    display: flex;
+    justify-content: space-evenly;
+}
+#boardgame-wttm section.deck {
+    border:1px solid #ddd;
+    border-radius:12px;
+    padding:12px;
+}
+
+#boardgame-wttm section.deck .zones {
+    display:flex;
+    gap:12px;
+    align-items:center;
+    justify-content: space-around;
+}
+#boardgame-wttm section.deck .zones img {
+    width:120px;
+    height:auto;
+    border-radius:8px;
+    border:1px solid #eee;
+}
+
+@media screen and (max-width: 769px) {
+    #boardgame-wttm .scenarios {
+        margin-bottom: 1em;
+    }
+    #boardgame-wttm .objectives {
+        margin-bottom: 1em;
+    }
+    #boardgame-wttm .decks {
+        flex-direction: column;
+        /* justify-content: space-evenly;
+        height: 150px; */
+        gap: 5px;
+    }
+    #boardgame-wttm section.deck .zones img {
+        width:25svw;
+        height:auto;
+    }
+    #boardgame-wttm section.deck {
+        padding:5px;
+    }
+    #boardgame-wttm .action-buttons {
+        margin-top: 1em;
+    }
+    .main-boardgame {
+        justify-content: center;
+        padding: 0.5em;
+    }
+}

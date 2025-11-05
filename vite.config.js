@@ -7,7 +7,9 @@ export default defineConfig({
             input: [
                 'resources/css/app.css',
                 'resources/js/app.js',
+                'resources/css/boardgames/wttm.css',
                 'resources/js/boardgames/wttm.js',
+                'resources/css/boardgames/mcrw.css',
                 'resources/js/boardgames/mcrw.js',
 
             ],
