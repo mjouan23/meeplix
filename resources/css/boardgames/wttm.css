@@ -18,7 +18,7 @@
     justify-content: center;
 }
 #boardgame-wttm .objectives img {
-    width: 25svw;
+    width: 20svw;
     max-width: 250px;
 }
 #boardgame-wttm .decks {
@@ -45,6 +45,10 @@
 }
 
 @media screen and (max-width: 769px) {
+    #boardgame-wttm.main-boardgame {
+        justify-content: flex-start;
+        padding: 0.5em;
+    }
     #boardgame-wttm .scenarios {
         margin-bottom: 1em;
     }
@@ -66,9 +70,5 @@
     }
     #boardgame-wttm .action-buttons {
         margin-top: 1em;
-    }
-    .main-boardgame {
-        justify-content: center;
-        padding: 0.5em;
     }
 }
