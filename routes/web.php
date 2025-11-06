@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BoardgameController;
+use App\Models\Boardgame;
 use \App\Http\Controllers\Dashboard\BoardgameController as DashboardBoardgameController;
 
 
@@ -10,11 +11,21 @@ use \App\Http\Controllers\Dashboard\BoardgameController as DashboardBoardgameCon
 //     return view('welcome');
 // });
 
-Route::redirect('/', '/boardgames');
+// Route::get('/', function () {
+//     $boardgames = Boardgame::orderBy('created_at', 'desc')->get();
+//     return view('boardgames.index', compact('boardgames'));
+// });
 
+// Route::get('/boardgames', function () {
+//     $boardgames = Boardgame::orderBy('created_at', 'desc')->get();
+//     return view('boardgames.index', compact('boardgames'));
+// })->name('boardgames.index');
+
+Route::get('/', [BoardgameController::class, 'index']);
 Route::get('/boardgames', [BoardgameController::class, 'index'])->name('boardgames.index');
+Route::get('/boardgames/{boardgame}', [BoardgameController::class, 'show'])->name('boardgames.show');
 
-Auth::routes(['verify' => true]);
+// Auth::routes(['verify' => true]);
 // Importe les routes suivantes pour l'authentification
 // Route::get('login', [LoginController::class, 'showLoginForm'])->name('login');
 // Route::post('login', [LoginController::class, 'login']);
@@ -22,12 +33,13 @@ Auth::routes(['verify' => true]);
 // Route::get('register', [RegisterController::class, 'showRegistrationForm'])->name('register');
 // Route::post('register', [RegisterController::class, 'register']);
 
-Route::get('/boardgames', [App\Http\Controllers\HomeController::class, 'index'])->name('boardgames');
+// Supprimé: doublon de route /boardgames vers HomeController (rendu public via la route ci-dessus)
 
 
-Route::middleware(['auth'])->group(function () {
-    Route::resource('boardgames', BoardgameController::class)->only(['index', 'show']);
-});
+// Route::middleware(['auth'])->group(function () {
+//     // On ne protège pas l'index (liste publique). Garder d'autres routes si nécessaires.
+//     Route::resource('boardgames', BoardgameController::class)->only(['show']);
+// });
 
 // Création de jeux : uniquement admin
 Route::middleware(['auth', 'role:admin'])->group(function () {
@@ -50,9 +62,3 @@ Route::middleware(['auth', 'role:admin,moderator'])->group(function () {
     Route::post('/dashboard/boardgames/{boardgame}/upload-file', [DashboardBoardgameController::class, 'uploadFile'])->name('dashboard.boardgames.uploadFile');
     Route::delete('/dashboard/boardgames/files/{file}', [DashboardBoardgameController::class, 'destroyFile'])->name('dashboard.boardgames.files.destroy');
 });
-
-
-
-
-
-

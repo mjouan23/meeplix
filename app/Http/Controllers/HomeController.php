@@ -14,7 +14,7 @@ class HomeController extends Controller
     public function __construct()
     {
         // Supprimer ou commenter cette ligne pour retirer l'obligation de l'authentification
-        $this->middleware(['auth', 'verified']);
+        // $this->middleware(['auth', 'verified']);
     }
 
     /**

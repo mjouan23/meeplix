@@ -19,13 +19,16 @@ class BoardgameController extends Controller
         // return view('boardgames.index', compact('boardgames'));
 
         // Si l'utilisateur est authentifié, utiliser la vue de gestion des jeux
-        if (auth()->check()) {
-            $boardgames = Boardgame::orderBy('created_at', 'desc')->get();
-            return view('boardgames.index', compact('boardgames'));
-        }
+        // if (auth()->check()) {
+        //     $boardgames = Boardgame::orderBy('created_at', 'desc')->get();
+        //     return view('boardgames.index', compact('boardgames'));
+        // }
 
         // Sinon, utiliser la vue publique
-        return view('welcome');
+        // return view('welcome');
+
+        $boardgames = Boardgame::orderBy('created_at', 'desc')->get();
+        return view('boardgames.index', compact('boardgames'));
     }
 
     /**
@@ -33,12 +36,7 @@ class BoardgameController extends Controller
      */
     public function show(Boardgame $boardgame)
     {
-        // Accessible publiquement
-        if (auth()->check()) {
-            return view('boardgames.show', compact('boardgame'));
-        }
-        return view('home');
-
+        return view('boardgames.show', compact('boardgame'));
     }
 
 }
