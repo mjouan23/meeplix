@@ -67,7 +67,7 @@ body {
   background-color: var(--color-background-light);
   color: var(--color-secondary-dark);
   overflow-x: hidden;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
 }
 
 h1, h2, h3, h4, h5 {

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <!-- PWA -->
-    <meta name="theme-color" content="#0b1020">
+    <meta name="theme-color" content="#26A9E0">
     <link rel="manifest" href="{{ asset('build/manifest.webmanifest') }}">
     <link rel="apple-touch-icon" href="/icons/icon-192.png">
     <meta name="apple-mobile-web-app-capable" content="yes">
