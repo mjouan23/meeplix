@@ -3,6 +3,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- PWA -->
+    <meta name="theme-color" content="#0b1020">
+    <link rel="manifest" href="{{ Vite::asset('build/manifest.webmanifest') }}">
+    <link rel="apple-touch-icon" href="/icons/icon-192.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -22,11 +29,13 @@
                     <img src="/images/logo-meeplix.png" alt="Meeplix" width="32" height="32" class="me-2">
                     <span class="title">{{ config('app.name', 'Laravel') }}</span>
                 </a>
+                @auth
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                @endauth
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="@auth collapse navbar-collapse @else navbar-collapse @endauth" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
 
