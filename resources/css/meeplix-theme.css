@@ -90,6 +90,9 @@ h1, h2, h3, h4, h5 {
   flex-direction: column;
   /* justify-content: center; */
 }
+.nav-item.dropdown {
+    color: var(--color-surface) !important;
+}
 
 .title {
   color: var(--color-text-secondary);
