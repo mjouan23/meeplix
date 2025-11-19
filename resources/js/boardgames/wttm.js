@@ -179,6 +179,8 @@
     const objectives = document.querySelector('.objectives');
     const scenarioSelect = document.querySelector('.lstScenarios');
     const playButton = document.querySelector('#playButton');
+    const loader = document.querySelector('#boardgame-wttm .wttm-loader');
+    const decksWrapper = document.querySelector('#boardgame-wttm .decks');
     if (playButton && scenarioSelect) {
       playButton.addEventListener('click', (e) => {
         e.preventDefault();
@@ -190,6 +192,8 @@
         document.querySelectorAll('#boardgame-wttm .deck').forEach(renderDeck);
         scenarios.style.display = 'none';
         objectives.style.display = 'flex';
+        if (loader) loader.classList.add('is-hidden');
+        if (decksWrapper) decksWrapper.classList.remove('is-hidden');
       });
     }
     const btnPull = document.querySelector('#pullButton');

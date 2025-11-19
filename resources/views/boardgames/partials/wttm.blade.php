@@ -16,7 +16,15 @@
     <img class="img-objective-card objective-b">
     <img class="img-objective-card objective-c">
 </div>
-<div class="decks">
+<div class="wttm-loader" aria-hidden="true">
+    <svg width="140" height="140" viewBox="0 0 140 140" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="70" cy="70" r="60" stroke="#115E89" stroke-width="5" fill="none" opacity="0.25"></circle>
+        <circle cx="70" cy="70" r="60" stroke="#26A9E0" stroke-width="7" fill="none" stroke-linecap="round" stroke-dasharray="90 400">
+            <animateTransform attributeName="transform" type="rotate" from="0 70 70" to="360 70 70" dur="1.6s" repeatCount="indefinite"></animateTransform>
+        </circle>
+    </svg>
+</div>
+<div class="decks is-hidden">
     <section class="deck" data-deck="0">
         <div class="zones">
             <div>
