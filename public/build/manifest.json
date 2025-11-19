@@ -48,7 +48,7 @@
     "isEntry": true
   },
   "resources/css/boardgames/wttm.css": {
-    "file": "assets/wttm-BUIakHor.css",
+    "file": "assets/wttm-onc3SwmO.css",
     "src": "resources/css/boardgames/wttm.css",
     "isEntry": true
   },
@@ -112,104 +112,132 @@
     "file": "assets/construction-cards-back-ELuayvX5.webp",
     "src": "resources/images/boardgames/wttm/actions/construction-cards-back.webp"
   },
+  "resources/images/boardgames/wttm/icons/icon-astronaute.webp": {
+    "file": "assets/icon-astronaute-AX8c2D8Z.webp",
+    "src": "resources/images/boardgames/wttm/icons/icon-astronaute.webp"
+  },
+  "resources/images/boardgames/wttm/icons/icon-eau.webp": {
+    "file": "assets/icon-eau-_8zPx9-G.webp",
+    "src": "resources/images/boardgames/wttm/icons/icon-eau.webp"
+  },
+  "resources/images/boardgames/wttm/icons/icon-energie.webp": {
+    "file": "assets/icon-energie-BJHXcOFP.webp",
+    "src": "resources/images/boardgames/wttm/icons/icon-energie.webp"
+  },
+  "resources/images/boardgames/wttm/icons/icon-joker.webp": {
+    "file": "assets/icon-joker-OUw6QjlQ.webp",
+    "src": "resources/images/boardgames/wttm/icons/icon-joker.webp"
+  },
+  "resources/images/boardgames/wttm/icons/icon-planning.webp": {
+    "file": "assets/icon-planning-CA3f26_V.webp",
+    "src": "resources/images/boardgames/wttm/icons/icon-planning.webp"
+  },
+  "resources/images/boardgames/wttm/icons/icon-plante.webp": {
+    "file": "assets/icon-plante-CG2NipGD.webp",
+    "src": "resources/images/boardgames/wttm/icons/icon-plante.webp"
+  },
+  "resources/images/boardgames/wttm/icons/icon-robot.webp": {
+    "file": "assets/icon-robot-DzLmQ21O.webp",
+    "src": "resources/images/boardgames/wttm/icons/icon-robot.webp"
+  },
   "resources/images/boardgames/wttm/numbers/construction-cards-front.webp": {
     "file": "assets/construction-cards-front-BpCpuwJh.webp",
     "src": "resources/images/boardgames/wttm/numbers/construction-cards-front.webp"
   },
   "resources/images/boardgames/wttm/numbers/nombre-0-bis.webp": {
-    "file": "assets/nombre-0-bis-BYDMCO0S.webp",
+    "file": "assets/nombre-0-bis-CnjNZzlP.webp",
     "src": "resources/images/boardgames/wttm/numbers/nombre-0-bis.webp"
   },
   "resources/images/boardgames/wttm/numbers/nombre-0.webp": {
-    "file": "assets/nombre-0-DfVsW2S_.webp",
+    "file": "assets/nombre-0-CyvHWgIw.webp",
     "src": "resources/images/boardgames/wttm/numbers/nombre-0.webp"
   },
   "resources/images/boardgames/wttm/numbers/nombre-1.webp": {
-    "file": "assets/nombre-1-BjEzyr2O.webp",
+    "file": "assets/nombre-1-fNiI9847.webp",
     "src": "resources/images/boardgames/wttm/numbers/nombre-1.webp"
   },
   "resources/images/boardgames/wttm/numbers/nombre-10.webp": {
-    "file": "assets/nombre-10-B3o_apm3.webp",
+    "file": "assets/nombre-10-C-4GXdNB.webp",
     "src": "resources/images/boardgames/wttm/numbers/nombre-10.webp"
   },
   "resources/images/boardgames/wttm/numbers/nombre-11.webp": {
-    "file": "assets/nombre-11-CNdBD5-t.webp",
+    "file": "assets/nombre-11-lgEwC0Uh.webp",
     "src": "resources/images/boardgames/wttm/numbers/nombre-11.webp"
   },
   "resources/images/boardgames/wttm/numbers/nombre-12-bis.webp": {
-    "file": "assets/nombre-12-bis-CJjV14fx.webp",
+    "file": "assets/nombre-12-bis-CJMkn7Kg.webp",
     "src": "resources/images/boardgames/wttm/numbers/nombre-12-bis.webp"
   },
   "resources/images/boardgames/wttm/numbers/nombre-12.webp": {
-    "file": "assets/nombre-12-DZo9j0qy.webp",
+    "file": "assets/nombre-12-Czr-Gxp3.webp",
     "src": "resources/images/boardgames/wttm/numbers/nombre-12.webp"
   },
   "resources/images/boardgames/wttm/numbers/nombre-13.webp": {
-    "file": "assets/nombre-13-D3VY1sGJ.webp",
+    "file": "assets/nombre-13-lgDA9d2r.webp",
     "src": "resources/images/boardgames/wttm/numbers/nombre-13.webp"
   },
   "resources/images/boardgames/wttm/numbers/nombre-14.webp": {
-    "file": "assets/nombre-14-BK2wK1fj.webp",
+    "file": "assets/nombre-14-80B0MTB3.webp",
     "src": "resources/images/boardgames/wttm/numbers/nombre-14.webp"
   },
   "resources/images/boardgames/wttm/numbers/nombre-15.webp": {
-    "file": "assets/nombre-15-DsBvbc5v.webp",
+    "file": "assets/nombre-15-Cuw_1jjt.webp",
     "src": "resources/images/boardgames/wttm/numbers/nombre-15.webp"
   },
   "resources/images/boardgames/wttm/numbers/nombre-16.webp": {
-    "file": "assets/nombre-16-DNxe9Kp2.webp",
+    "file": "assets/nombre-16-CIPIXMnF.webp",
     "src": "resources/images/boardgames/wttm/numbers/nombre-16.webp"
   },
   "resources/images/boardgames/wttm/numbers/nombre-17.webp": {
-    "file": "assets/nombre-17-BILIXY0V.webp",
+    "file": "assets/nombre-17-BN-BKnvS.webp",
     "src": "resources/images/boardgames/wttm/numbers/nombre-17.webp"
   },
   "resources/images/boardgames/wttm/numbers/nombre-2.webp": {
-    "file": "assets/nombre-2-B84pvb8W.webp",
+    "file": "assets/nombre-2-C-kD_vYN.webp",
     "src": "resources/images/boardgames/wttm/numbers/nombre-2.webp"
   },
   "resources/images/boardgames/wttm/numbers/nombre-3.webp": {
-    "file": "assets/nombre-3-CGuZWcv2.webp",
+    "file": "assets/nombre-3-DWIZH2jY.webp",
     "src": "resources/images/boardgames/wttm/numbers/nombre-3.webp"
   },
   "resources/images/boardgames/wttm/numbers/nombre-4.webp": {
-    "file": "assets/nombre-4-Cj07g0mg.webp",
+    "file": "assets/nombre-4-B0krP9_E.webp",
     "src": "resources/images/boardgames/wttm/numbers/nombre-4.webp"
   },
   "resources/images/boardgames/wttm/numbers/nombre-42.webp": {
-    "file": "assets/nombre-42-DLqBmOBK.webp",
+    "file": "assets/nombre-42-BC8vtMLo.webp",
     "src": "resources/images/boardgames/wttm/numbers/nombre-42.webp"
   },
   "resources/images/boardgames/wttm/numbers/nombre-5.webp": {
-    "file": "assets/nombre-5-Dr9Vpwox.webp",
+    "file": "assets/nombre-5-CrlXyzCD.webp",
     "src": "resources/images/boardgames/wttm/numbers/nombre-5.webp"
   },
   "resources/images/boardgames/wttm/numbers/nombre-6-9.webp": {
-    "file": "assets/nombre-6-9-GWSQeRup.webp",
+    "file": "assets/nombre-6-9-B06SjIvz.webp",
     "src": "resources/images/boardgames/wttm/numbers/nombre-6-9.webp"
   },
   "resources/images/boardgames/wttm/numbers/nombre-6.webp": {
-    "file": "assets/nombre-6-fUwiV2cL.webp",
+    "file": "assets/nombre-6-DIDYDPJn.webp",
     "src": "resources/images/boardgames/wttm/numbers/nombre-6.webp"
   },
   "resources/images/boardgames/wttm/numbers/nombre-7.webp": {
-    "file": "assets/nombre-7-BhtayYEE.webp",
+    "file": "assets/nombre-7-NINY67Zm.webp",
     "src": "resources/images/boardgames/wttm/numbers/nombre-7.webp"
   },
   "resources/images/boardgames/wttm/numbers/nombre-8-1.2.webp": {
-    "file": "assets/nombre-8-1.2-Dr1IcsiO.webp",
+    "file": "assets/nombre-8-1.2-BXhAdnww.webp",
     "src": "resources/images/boardgames/wttm/numbers/nombre-8-1.2.webp"
   },
   "resources/images/boardgames/wttm/numbers/nombre-8.webp": {
-    "file": "assets/nombre-8-D8bjerVJ.webp",
+    "file": "assets/nombre-8-HmZqgCp-.webp",
     "src": "resources/images/boardgames/wttm/numbers/nombre-8.webp"
   },
   "resources/images/boardgames/wttm/numbers/nombre-9.webp": {
-    "file": "assets/nombre-9-D4k_psSI.webp",
+    "file": "assets/nombre-9-Cr0CuNJR.webp",
     "src": "resources/images/boardgames/wttm/numbers/nombre-9.webp"
   },
   "resources/images/boardgames/wttm/numbers/nombre-x.webp": {
-    "file": "assets/nombre-x-D4p8jfjv.webp",
+    "file": "assets/nombre-x-DqRAPg9P.webp",
     "src": "resources/images/boardgames/wttm/numbers/nombre-x.webp"
   },
   "resources/images/boardgames/wttm/objectives/objective-a-1-1.webp": {
@@ -424,36 +452,36 @@
     "isEntry": true
   },
   "resources/js/boardgames/wttm.js": {
-    "file": "assets/wttm-C5CYkBLv.js",
+    "file": "assets/wttm-B1sOVFTk.js",
     "name": "wttm",
     "src": "resources/js/boardgames/wttm.js",
     "isEntry": true,
     "assets": [
       "assets/construction-cards-front-BpCpuwJh.webp",
-      "assets/nombre-0-bis-BYDMCO0S.webp",
-      "assets/nombre-0-DfVsW2S_.webp",
-      "assets/nombre-1-BjEzyr2O.webp",
-      "assets/nombre-10-B3o_apm3.webp",
-      "assets/nombre-11-CNdBD5-t.webp",
-      "assets/nombre-12-bis-CJjV14fx.webp",
-      "assets/nombre-12-DZo9j0qy.webp",
-      "assets/nombre-13-D3VY1sGJ.webp",
-      "assets/nombre-14-BK2wK1fj.webp",
-      "assets/nombre-15-DsBvbc5v.webp",
-      "assets/nombre-16-DNxe9Kp2.webp",
-      "assets/nombre-17-BILIXY0V.webp",
-      "assets/nombre-2-B84pvb8W.webp",
-      "assets/nombre-3-CGuZWcv2.webp",
-      "assets/nombre-4-Cj07g0mg.webp",
-      "assets/nombre-42-DLqBmOBK.webp",
-      "assets/nombre-5-Dr9Vpwox.webp",
-      "assets/nombre-6-9-GWSQeRup.webp",
-      "assets/nombre-6-fUwiV2cL.webp",
-      "assets/nombre-7-BhtayYEE.webp",
-      "assets/nombre-8-1.2-Dr1IcsiO.webp",
-      "assets/nombre-8-D8bjerVJ.webp",
-      "assets/nombre-9-D4k_psSI.webp",
-      "assets/nombre-x-D4p8jfjv.webp",
+      "assets/nombre-0-bis-CnjNZzlP.webp",
+      "assets/nombre-0-CyvHWgIw.webp",
+      "assets/nombre-1-fNiI9847.webp",
+      "assets/nombre-10-C-4GXdNB.webp",
+      "assets/nombre-11-lgEwC0Uh.webp",
+      "assets/nombre-12-bis-CJMkn7Kg.webp",
+      "assets/nombre-12-Czr-Gxp3.webp",
+      "assets/nombre-13-lgDA9d2r.webp",
+      "assets/nombre-14-80B0MTB3.webp",
+      "assets/nombre-15-Cuw_1jjt.webp",
+      "assets/nombre-16-CIPIXMnF.webp",
+      "assets/nombre-17-BN-BKnvS.webp",
+      "assets/nombre-2-C-kD_vYN.webp",
+      "assets/nombre-3-DWIZH2jY.webp",
+      "assets/nombre-4-B0krP9_E.webp",
+      "assets/nombre-42-BC8vtMLo.webp",
+      "assets/nombre-5-CrlXyzCD.webp",
+      "assets/nombre-6-9-B06SjIvz.webp",
+      "assets/nombre-6-DIDYDPJn.webp",
+      "assets/nombre-7-NINY67Zm.webp",
+      "assets/nombre-8-1.2-BXhAdnww.webp",
+      "assets/nombre-8-HmZqgCp-.webp",
+      "assets/nombre-9-Cr0CuNJR.webp",
+      "assets/nombre-x-DqRAPg9P.webp",
       "assets/action-astronaute-CaDBrYph.webp",
       "assets/action-eau-CX1JXeIz.webp",
       "assets/action-energie-eau-BKNouawN.webp",
@@ -465,6 +493,13 @@
       "assets/action-robot-planning-CDLc6DE5.webp",
       "assets/action-robot-DElGCdHZ.webp",
       "assets/construction-cards-back-ELuayvX5.webp",
+      "assets/icon-astronaute-AX8c2D8Z.webp",
+      "assets/icon-eau-_8zPx9-G.webp",
+      "assets/icon-energie-BJHXcOFP.webp",
+      "assets/icon-joker-OUw6QjlQ.webp",
+      "assets/icon-planning-CA3f26_V.webp",
+      "assets/icon-plante-CG2NipGD.webp",
+      "assets/icon-robot-DzLmQ21O.webp",
       "assets/objective-a-1-1-C7YP0LcA.webp",
       "assets/objective-a-1-2-O7CULp2N.webp",
       "assets/objective-a-2-1-vS5G03qS.webp",
