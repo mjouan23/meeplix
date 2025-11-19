@@ -87,6 +87,7 @@
         display: flex;
         justify-content: space-between;
         padding: 0.5em;
+        height: calc(100svh - 58px);
     }
     #boardgame-wttm .scenarios {
         margin-bottom: 1em;
