@@ -65,6 +65,6 @@
     </section>
 </div>
 <div class="action-buttons">
-    <a href="#" class="btn btn-primary" id="pullButton">Tirer</a>
+    <a href="#" class="btn btn-primary is-invisible" id="pullButton">Tirer</a>
     <a href="{{ url('/') }}" class="btn btn-secondary">Retour</a>
 </div>

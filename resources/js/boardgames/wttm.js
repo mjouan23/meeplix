@@ -181,6 +181,7 @@
     const playButton = document.querySelector('#playButton');
     const loader = document.querySelector('#boardgame-wttm .wttm-loader');
     const decksWrapper = document.querySelector('#boardgame-wttm .decks');
+    const pullButton = document.querySelector('#pullButton');
     if (playButton && scenarioSelect) {
       playButton.addEventListener('click', (e) => {
         e.preventDefault();
@@ -194,11 +195,11 @@
         objectives.style.display = 'flex';
         if (loader) loader.classList.add('is-hidden');
         if (decksWrapper) decksWrapper.classList.remove('is-hidden');
+        if (pullButton) pullButton.classList.remove('is-invisible');
       });
     }
-    const btnPull = document.querySelector('#pullButton');
-    if (btnPull) {
-        btnPull.addEventListener('click', () => {
+    if (pullButton) {
+        pullButton.addEventListener('click', () => {
             // Tour: on pioche 1 carte dans chacun des 3 paquets
             decks.forEach((_, i) => drawFromDeck(i));
             // Puis on re-render les 3 paquets

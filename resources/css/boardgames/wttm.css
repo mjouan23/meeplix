@@ -33,6 +33,9 @@
 #boardgame-wttm .is-hidden {
     display: none !important;
 }
+#boardgame-wttm .is-invisible {
+    visibility: hidden;
+}
 #boardgame-wttm .decks {
     display: flex;
     justify-content: space-evenly;
