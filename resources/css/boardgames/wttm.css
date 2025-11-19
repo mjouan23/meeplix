@@ -89,6 +89,8 @@
         /* justify-content: space-evenly;
         height: 150px; */
         gap: 5px;
+        width: 70svw;
+        margin: 0 auto;
     }
     #boardgame-wttm section.deck .zones img {
         width:25svw;
