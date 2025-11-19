@@ -9,7 +9,7 @@
         <option value="7">Aventure 7 :  La fuite</option>
         <option value="8">Aventure 8 : L'affrontement</option>
     </select>
-    <a href="#" class="btn btn-primary" id="playButton">Jouer</a>
+    <a href="#" class="btn btn-primary" id="playButton">Jouer !</a>
 </div>
 <div class="objectives">
     <img class="img-objective-card objective-a">
@@ -20,6 +20,8 @@
     <section class="deck" data-deck="0">
         <div class="zones">
             <div>
+                <img class="img-next-action icon-action-1">
+                <img class="img-next-action icon-action-2">
                 <img class="img-next-number">
             </div>
             <div>
@@ -31,6 +33,8 @@
     <section class="deck" data-deck="1">
         <div class="zones">
             <div>
+                <img class="img-next-action icon-action-1">
+                <img class="img-next-action icon-action-2">
                 <img class="img-next-number">
             </div>
             <div>
@@ -42,6 +46,8 @@
     <section class="deck" data-deck="2">
         <div class="zones">
             <div>
+                <img class="img-next-action icon-action-1">
+                <img class="img-next-action icon-action-2">
                 <img class="img-next-number">
             </div>
             <div>

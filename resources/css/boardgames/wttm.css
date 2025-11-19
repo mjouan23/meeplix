@@ -40,11 +40,15 @@
     align-items:center;
     justify-content: space-around;
 }
+#boardgame-wttm section.deck .zones > div:first-child {
+    position: relative;
+    z-index: -2;
+    background-color: #30291a;
+}
+
 #boardgame-wttm section.deck .zones img {
     width:120px;
     height:auto;
-    border-radius:8px;
-    border:1px solid #eee;
 }
 
 /* Sur écrans tactiles: aperçu lors d'un appui (état actif) */
@@ -95,5 +99,18 @@
     }
     #boardgame-wttm .action-buttons {
         margin-top: 1em;
+    }
+    #boardgame-wttm section.deck .zones img.img-next-action {
+        position: absolute;
+        z-index: -1;
+        width:20px;
+    }
+    #boardgame-wttm section.deck .zones img.img-next-action.icon-action-1 {
+        top: 8px;
+        right: 6px;
+    }
+    #boardgame-wttm section.deck .zones img.img-next-action.icon-action-2 {
+        bottom: 8px;
+        left: 6px;
     }
 }

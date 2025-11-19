@@ -23,6 +23,10 @@
     as: 'url',
     eager: true,
   });
+  const ICON_URLS = import.meta.glob('../../images/boardgames/wttm/icons/*.webp', {
+    as: 'url',
+    eager: true,
+  });
   const OBJECTIVE_URLS = import.meta.glob('../../images/boardgames/wttm/objectives/*.webp', {
     as: 'url',
     eager: true,
@@ -57,6 +61,10 @@
     const key = `../../images/boardgames/wttm/actions/action-${action}.webp`;
     return ACTION_URLS[key] ?? '';
   }
+  function imgIconSrc(action) {
+    const key = `../../images/boardgames/wttm/icons/icon-${action}.webp`;
+    return ICON_URLS[key] ?? '';
+  }
 
   // Objectives helpers
   function randomVariant() {
@@ -89,6 +97,7 @@
     const deckId = parseInt($deck.dataset.deck, 10);
     const state = decks[deckId];
     const nextNumberImg = $deck.querySelector('.img-next-number');
+    const nextActionImgs = $deck.querySelectorAll('.img-next-action');
     const lastActionImg = $deck.querySelector('.img-last-action');
 
     // Si le paquet est vide, on le re-mélange immédiatement (séparément)
@@ -100,15 +109,32 @@
 
     // Prochain nombre (peek)
     if (state.index < state.cards.length) {
-      const [nextNumber] = state.cards[state.index];
+      const [nextNumber, nextAction] = state.cards[state.index];
       nextNumberImg.src = imgNumberSrc(nextNumber);
       nextNumberImg.style.opacity = '1';
       nextNumberImg.alt = `Prochain nombre: ${nextNumber}`;
+      nextActionImgs.forEach(img => {
+        const iconSrc = imgIconSrc(nextAction);
+        if (iconSrc) {
+          img.src = iconSrc;
+          img.alt = `Action associee: ${nextAction}`;
+          img.style.opacity = '1';
+        } else {
+          img.removeAttribute('src');
+          img.alt = 'Action inconnue';
+          img.style.opacity = '0.4';
+        }
+      });
     } else {
       // Plus de cartes
       nextNumberImg.removeAttribute('src');
       nextNumberImg.alt = 'Fin du paquet';
       nextNumberImg.style.opacity = '0.4';
+      nextActionImgs.forEach(img => {
+        img.removeAttribute('src');
+        img.alt = 'Fin du paquet';
+        img.style.opacity = '0.4';
+      });
     }
 
     // Dernière action piochée

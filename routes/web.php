@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BoardgameController;
 use App\Models\Boardgame;
 use \App\Http\Controllers\Dashboard\BoardgameController as DashboardBoardgameController;
+use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Auth\RegisterController;
 
 
 
@@ -25,21 +27,21 @@ Route::get('/', [BoardgameController::class, 'index']);
 Route::get('/boardgames', [BoardgameController::class, 'index'])->name('boardgames.index');
 Route::get('/boardgames/{boardgame}', [BoardgameController::class, 'show'])->name('boardgames.show');
 
-// Auth::routes(['verify' => true]);
+Auth::routes(['verify' => true]);
 // Importe les routes suivantes pour l'authentification
-// Route::get('login', [LoginController::class, 'showLoginForm'])->name('login');
-// Route::post('login', [LoginController::class, 'login']);
-// Route::post('logout', [LoginController::class, 'logout'])->name('logout');
-// Route::get('register', [RegisterController::class, 'showRegistrationForm'])->name('register');
-// Route::post('register', [RegisterController::class, 'register']);
+Route::get('login', [LoginController::class, 'showLoginForm'])->name('login');
+Route::post('login', [LoginController::class, 'login']);
+Route::post('logout', [LoginController::class, 'logout'])->name('logout');
+Route::get('register', [RegisterController::class, 'showRegistrationForm'])->name('register');
+Route::post('register', [RegisterController::class, 'register']);
+// routes pour le changement de mot de passe
+Route::get('password/change', [PasswordChangeController::class, 'show'])
+    ->name('password.change')
+    ->middleware('auth');
 
-// Supprimé: doublon de route /boardgames vers HomeController (rendu public via la route ci-dessus)
-
-
-// Route::middleware(['auth'])->group(function () {
-//     // On ne protège pas l'index (liste publique). Garder d'autres routes si nécessaires.
-//     Route::resource('boardgames', BoardgameController::class)->only(['show']);
-// });
+Route::post('password/change', [PasswordChangeController::class, 'update'])
+    ->name('password.change.update')
+    ->middleware('auth');
 
 // Création de jeux : uniquement admin
 Route::middleware(['auth', 'role:admin'])->group(function () {
