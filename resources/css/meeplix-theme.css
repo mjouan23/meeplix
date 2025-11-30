@@ -203,3 +203,16 @@ a {
 a:hover {
   text-decoration: none;
 }
+
+/* ===== Loader ===== */
+#boardgame-wttm .wttm-loader {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2em 0;
+}
+#boardgame-wttm .wttm-loader p {
+  position: absolute;
+  margin: 0 auto;
+}

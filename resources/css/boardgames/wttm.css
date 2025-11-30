@@ -24,12 +24,6 @@
     transform-origin: center;
     position: relative;
 }
-#boardgame-wttm .wttm-loader {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2em 0;
-}
 #boardgame-wttm .is-hidden {
     display: none !important;
 }
