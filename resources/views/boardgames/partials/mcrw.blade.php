@@ -65,6 +65,6 @@
     </div>
 </div>
 <div class="action-buttons">
-    <a href="#" class="btn btn-primary" id="rollButton">Lancer</a>
+    <a href="#" class="btn btn-primary" id="rollButton">Tirer</a>
     <a href="{{ url('/') }}" class="btn btn-secondary">Retour</a>
 </div>
